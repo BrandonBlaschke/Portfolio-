@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 20px;
+  color:#404040;
+}
+
+#jsFrame {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: all;
+  border: 0;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img#icon {
+  display: inline;
+}
+
+img#my_picture {
+  float: right;
+  border: 5px black;
+  border-style: inset ;
+}
+
+p {
+  font-family: "Montserrat", "Courier New", "Verdana", "Geneva";
+  font-size: 25px;
+}
+
+p#menuP {
+  word-spacing: 30px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30px;
+  color: black;
+}
+
+h2 {
+  font-family: "Montserrat", "Courier New", "Verdana", "Geneva";
+}
+
+ul {
+  font-family: "Montserrat", "Consolas", "Verdana", "Geneva";
+  font-size: 25px;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  font-family: "Montserrat", "Consolas", "Verdana", "Geneva";
+}
+
+a:visited {
+  color:black;
+  text-decoration: none;
+  font-family: "Montserrat", "Consolas", "Verdana", "Geneva";
+}
+
+a:hover {
+  color: #00ccff;
+}
+
+a#workLink:link {
+  color: #404040;
+  background-color: transparent;
+  text-decoration: none;
+  position: static;
+}
+
+a#workLink:visited {
+  color: #404040;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a#workLink:hover {
+  color: #00ccff;
+}
