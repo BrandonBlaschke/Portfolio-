@@ -5,7 +5,7 @@ var drag;
 var strength;
 var x, y, fillColor, currentTime;
 
-//Limit on how long a circle stays up. 
+//Limit on how long a circle stays up.
 var time = 200;
 
 
@@ -18,8 +18,8 @@ function setup() {
   target = 0;
   vel = 0;
 
-  x = windowWidth / 2;
-  y = windowHeight / 2;
+  x = random(windowWidth);
+  y = random(windowHeight);
   fillColor = color(0);
 
   drag = .82;
