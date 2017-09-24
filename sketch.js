@@ -1,4 +1,6 @@
-var icon;
+var mailIcon;
+
+//Later to add ability for all icons to pop in and out
 
 //Caculating the different variables for the effect
 var target, vel;
@@ -11,11 +13,11 @@ var resizeIcon = false;
 function setup() {
 
   //Get the mail icon and add to variable
-  icon = select('#icon');
+  mailIcon = select('#icon');
 
   //When mouse is over or out of icon change the size
-  icon.mouseOver(newSizeTrue);
-  icon.mouseOut(newSizeFalse);
+  mailIcon.mouseOver(newSizeTrue);
+  mailIcon.mouseOut(newSizeFalse);
 
   width = 40;
   height = 25;
@@ -51,8 +53,8 @@ function draw() {
   height += vel;
 
   //Apply new width and height
-  icon.style("width", width + "px");
-  icon.style("height", height + "px");
+  mailIcon.style("width", width + "px");
+  mailIcon.style("height", height + "px");
 }
 
 function newSizeTrue() {

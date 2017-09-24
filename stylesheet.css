@@ -29,6 +29,10 @@ img#icon {
   display: inline;
 }
 
+img#giticon {
+  display: inline;
+}
+
 img#my_picture {
   float: right;
   border: 5px black;
@@ -38,14 +42,7 @@ img#my_picture {
 p {
   font-family: "Montserrat", "Courier New", "Verdana", "Geneva";
   font-size: 25px;
-}
-
-p#menuP {
-  word-spacing: 30px;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 30px;
-  color: black;
+  color: #404040;
 }
 
 h2 {
@@ -58,14 +55,13 @@ ul {
 }
 
 a:link {
-  color: black;
   background-color: transparent;
   text-decoration: none;
   font-family: "Montserrat", "Consolas", "Verdana", "Geneva";
 }
 
 a:visited {
-  color:black;
+  color:#404040;
   text-decoration: none;
   font-family: "Montserrat", "Consolas", "Verdana", "Geneva";
 }
@@ -76,6 +72,7 @@ a:hover {
 
 a#workLink:link {
   color: #404040;
+  font-size: 30px;
   background-color: transparent;
   text-decoration: none;
   position: static;
