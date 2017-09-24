@@ -18,8 +18,8 @@ function setup() {
   target = 0;
   vel = 0;
 
-  x = random(windowWidth);
-  y = random(windowHeight);
+  x = random(100, windowWidth);
+  y = random(100, windowHeight);
   fillColor = color(0);
 
   drag = .82;
