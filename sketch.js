@@ -1,66 +1,79 @@
-var mailIcon;
+//Name of current icon
+var resizeName;
 
-//Later to add ability for all icons to pop in and out
-
-//Caculating the different variables for the effect
-var target, vel;
-var width, height;
-var drag;
-var strength;
-
+//If we are going to rezise icon or not
 var resizeIcon = false;
 
+//place holders for orginal icon widths
+var ogMailWidth;
+var ogGitHeight;
+
+//Current velocity for the animation
+var iconVel = 0;
+
+//Set up variables
 function setup() {
-
-  //Get the mail icon and add to variable
-  mailIcon = select('#icon');
-
-  //When mouse is over or out of icon change the size
-  mailIcon.mouseOver(newSizeTrue);
-  mailIcon.mouseOut(newSizeFalse);
-
-  width = 40;
-  height = 25;
-  target = 0;
-  vel = 0;
-
-  drag = .82;
-  strength = 0.2;
+  ogMailWidth = $("#icon").width();
+  ogGitWidth = $("#giticon").width();
 }
 
+//Animation loop
 function draw() {
 
-  //If we can resize then the target size will change
-  if (resizeIcon) {
-    target = 50;
-  } else {
-    target = 40;
+  //Draw icons changing
+  animateIcon("#giticon", ogGitWidth);
+  animateIcon("#nameImage", ogNameWidth);
+}
+
+//Animates an icon given its html id and orginal starting width
+function animateIcon(iconName, orginalWidth) {
+
+  //Apply the functions to control mouseout and mouseover for aniamtion
+  $(iconName).mouseover(function() {
+    resizeIcon = true;
+    resizeName = iconName;
+  });
+  $(iconName).mouseout(function() {
+    resizeIcon = false;
+    resizeName = iconName;
+  });
+
+  //Only apply changes if were are on the right icon
+  if (resizeName == iconName) {
+
+    //Create variables for calculation
+    var icon = $(iconName)
+    var ogWidth = orginalWidth;
+    var iconWidth = icon.width();
+    var iconHeight = icon.height();
+    var iconTarget = iconWidth + 10;
+    var iconDrag = .82;
+    var iconStrength = 0.2;
+
+    //If we can resize then the target size will change
+    if (resizeIcon) {
+      iconTarget = ogWidth + 10;
+    } else {
+      iconTarget = ogWidth;
+    }
+
+    //Create the force for effect
+    var forceWidth = iconTarget - iconWidth;
+    forceWidth *= iconStrength;
+
+    var forceHeight = iconTarget - iconHeight;
+    forceHeight *= iconStrength;
+
+    //Mul by drag and add by force to get new Velocity
+    iconVel *= iconDrag;
+    iconVel += forceWidth;
+
+    //Add velocity to new radius
+    iconWidth += iconVel;
+    iconHeight += iconVel;
+
+    //Apply new width and height
+    $(icon).css("width", iconWidth + "px");
+    $(icon).css("height", iconHeight + "px");
   }
-
-  //Create the force for effect
-  var forceWidth = target - width;
-  forceWidth *= strength;
-
-  var forceHeight = target - height;
-  forceHeight *= strength;
-
-  //Mul by drag and add by force to get new Velocity
-  vel *= drag;
-  vel += forceWidth;
-
-  //Add velocity to new radius
-  width += vel;
-  height += vel;
-
-  //Apply new width and height
-  mailIcon.style("width", width + "px");
-  mailIcon.style("height", height + "px");
-}
-
-function newSizeTrue() {
-  resizeIcon = true;
-}
-
-function newSizeFalse() {
-  resizeIcon = false;
 }
