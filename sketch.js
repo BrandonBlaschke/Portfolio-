@@ -21,8 +21,8 @@ function setup() {
 function draw() {
 
   //Draw icons changing
+  animateIcon("#icon", ogMailWidth);
   animateIcon("#giticon", ogGitWidth);
-  animateIcon("#nameImage", ogNameWidth);
 }
 
 //Animates an icon given its html id and orginal starting width
