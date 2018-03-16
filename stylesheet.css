@@ -70,6 +70,14 @@ a:hover {
   color: #00ccff;
 }
 
+#notWorkLink {
+  color: #404040;
+  font-size: 30px;
+  background-color: transparent;
+  text-decoration: none;
+  position: static;
+}
+
 a#workLink:link {
   color: #404040;
   font-size: 30px;
