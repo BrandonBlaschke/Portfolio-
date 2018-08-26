@@ -1,4 +1,4 @@
-//Name of current icon
+//Name of current icon.
 var resizeName;
 
 //If we are going to rezise icon or not
