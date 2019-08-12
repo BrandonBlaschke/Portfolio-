@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Brandon Blaschke</title>
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   <!--link rel="icon" href="assets/favicon.ico" type="image/x-icon"-->
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
   <!-- Extra p5 libraries -->
   <script language="javascript" src="libraries/p5.dom.js"></script>
@@ -13,107 +13,66 @@
   <script language="javascript" type="text/javascript" src="sketch.js"></script>
   <!-- JQuery -->
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 
 <body>
 
   <!--Adding background animations-->
-  <iframe src="Portfoilio JS\index.html" id="jsFrame"></iframe>
+  <!-- <iframe src="Portfoilio JS\index.html" id="jsFrame"></iframe> -->
 
   <!--Image Title-->
-  <image src="assets/name_image.png" id="nameImage" alt="Brandon Blaschke"
-  style="width:405px; height:40px;">
+  <!-- <image src="assets/name_image.png" id="nameImage" alt="Brandon Blaschke"
+  style="width:405px; height:40px;"> -->
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+        <h1>Brandon Blaschke</h1>
+      </div>
+    </div>
+    <div class="row align-items-end" style="margin-top: 2em">
+      <div class="col">
+        <p>My Name is Brandon Blaschke I am a software engineer from Black Diamond, Washington. I like to work on many differ
+          projects and have expereince in many different fields.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col"><hr></div>
+        <div class="col" style="text-align: center">
+          <h2>Education</h2>
+        </div>
+        <div class="col"><hr></div>
+    </div>
+    <div class="row">
+        <div class="col"><hr></div>
+        <div class="col" style="text-align: center">
+          <h2>Work History</h2>
+        </div>
+        <div class="col"><hr></div>
+    </div>
+    <div class="row">
+        <div class="col"><hr></div>
+        <div class="col" style="text-align: center">
+          <h2>Contact</h2>
+        </div>
+        <div class="col"><hr></div>
+    </div>
+  </div>
 
-  <div class="content">
-    <p>My name is Brandon Blaschke, I am a
-      programming student from the University
-      of Washington.
 
-      <!--img alt="Me" id="my_picture" src="assets/me_image.jpg"
-      style="width:200px; height:226px;"-->
-
-      I am currently in the
-      computer science major as a senior. My
-      interests in programming include android
-      development, web development, front-end design, algorithms, and I also like to work on
-      graphic design. I have experience in
-      multiple languages, my most experienced
-      language would be Java.</p>
-
-      <h2>Languages</h2>
-
-      <ul>
-        <li>Java</li>
-        <li>Javascript</li>
-        <li>C</li>
-        <li>Python</li>
-        <li>HTML/CSS</li>
-        <li>React.js</li>
-        <li>SQL</li>
-      </ul>
-
-      <h2>Education </h2>
-
-      <ul>
-        <li>University of Washington</li>
-        <li>Current GPA is 3.7</li>
-        <li>Graduating in December</li>
-        <li>2015-2016 Dean's List</li>
-        <li>Spring 2017 Quarter Dean's List</li>
-      </ul>
-
-      <h2>Work</h2>
-      <p id="notWorkLink">Wind Talker Innovations:</p>
-      <p>Employed January 1, 2018 – June 6, 2018</p>
-      <p>Wind Talker Innovations is a startup company in the Tacoma area that is
-        developing network solutions for aviation and commercial use. My time spent
-        there has been focused on correcting bugs in simulations of a network in Java
-        and JavaScript while also developing a simulation network for Raspberry Pi's.</p>
-
-      <h2>Projects</h2>
-
-      <p>*Unfortunately Android apps have currently been removed from the play store</p>
-
-      <p>Orbit Spinner: A simple android game I made using
-      LibGdx, a mobile game framework in Java.</p>
-
-      <img src="assets/orbit_spinner_banner.png" alt="Orbit Spinner"
-      style="width:400px; height:200px;">
-
-      <p>Calorie Tracker: Simple android app that
-      helps to keep track of calories through out the day. Created in Android
-      Studio.</p>
-      
-      <img src="assets/calorie_tracker_banner.png" alt="Calorie Tracker" style="width:400px;
-      height:200px;">
-
-      <p><a href="http://codename-spookies.herokuapp.com/html/index.html"
-        target="_blank" id="workLink">Spookies:</a> This was a four person group project developed for a class in 2018. I contributed
-      to the project by creating the maps and leveling system for the player to progress and interact with the world. The game engine was provided, however
-    we heavily modified it for our needs as it was too simple for the game we were making. Other contributions was in the graphic design and web layout.</p>
-
-    <a href="http://codename-spookies.herokuapp.com/html/index.html" target="_blank"> 
-      <img src="assets/spookies_logo.png" alt="Calorie Tracker" style="width:400px;
-      height:200px;"></a>
-      <h2>Contact</h2>
-
-      <!-- Mail Link -->
-      <image id="icon" src="assets/mail_icon.png" alt="Mail" style="width:40px; height:25px;">
-      <a href="mailto:brandonj.blaschke@gmail.com?Subject=Hello" target="_top"
-      id="workLink">brandonj.blaschke@gmail.com</a>
-
-      <!--Place holder for space-->
-      <p></p>
-
-      <!--GitHub Link-->
-      <image id="giticon" src="assets/git_icon.png" alt="GitHub" style="width:32px; height:32px;">
-      <a href="https://github.com/BrandonBlaschke" target="_blank" id="workLink"
-      >GitHub</a>
-
-      <p>Animations made using the <a href="https://p5js.org/" target="_blank">
-      p5.js library.</a> </p>
-
-</div>
-
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>
