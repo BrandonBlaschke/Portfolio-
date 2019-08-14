@@ -1,6 +1,19 @@
-$(function() {
-    $("#content1").hide().fadeIn(2000);
-    $("#content2").hide().fadeIn(3000);
-    $("#content3").hide().fadeIn(4000);
-    $("#content4").hide().fadeIn(5000);
+$(function () {
+    $("#content1").hide();
+    $("#content2").hide();
+    $("#content3").hide();
+    $("#content4").hide();
+
+    setTimeout(() => {
+        $("#content1").hide().fadeIn(2000);
+        setTimeout(function () {
+            $("#content2").fadeIn(2000);
+        }, 1000);
+        setTimeout(function () {
+            $("#content3").fadeIn(2000);
+        }, 2000);
+        setTimeout(function () {
+            $("#content4").fadeIn(2000);
+        }, 3000);
+    }, 1000);
 });

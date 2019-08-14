@@ -54,8 +54,8 @@ h1 {
 h2 {
   font-family: "Montserrat", "Courier New", "Verdana", "Geneva";
   color: white;
-  /* color: rgb(13, 196, 241); */
   font-weight: bold;
+  margin-top: 1em;
 }
 
 ul {
@@ -63,44 +63,36 @@ ul {
   font-size: 25px;
 }
 
-a:link {
+a {
   background-color: transparent;
   text-decoration: none;
+  color: white;
   font-family: "Montserrat", "Consolas", "Verdana", "Geneva";
 }
 
 a:visited {
-  color:#404040;
+  color: white;
   text-decoration: none;
   font-family: "Montserrat", "Consolas", "Verdana", "Geneva";
 }
 
 a:hover {
-  color: #00ccff;
+  color: #7c7979;
 }
 
-#notWorkLink {
-  color: #404040;
-  font-size: 30px;
-  background-color: transparent;
-  text-decoration: none;
-  position: static;
+.bottom_line {
+  border-bottom: 3px solid white;
+  width: fit-content;
 }
 
-a#workLink:link {
-  color: #404040;
-  font-size: 30px;
-  background-color: transparent;
-  text-decoration: none;
-  position: static;
+.indent {
+  margin-left: 1em;
 }
 
-a#workLink:visited {
-  color: #404040;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a#workLink:hover {
-  color: #00ccff;
+.small {
+  color: white;
+  font-size: 1em;
+  margin-left: 3em;
+  font-style: italic;
+  margin-top: -1em;
 }
