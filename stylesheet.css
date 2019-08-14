@@ -53,7 +53,8 @@ h1 {
 
 h2 {
   font-family: "Montserrat", "Courier New", "Verdana", "Geneva";
-  color: rgb(13, 196, 241);
+  color: white;
+  /* color: rgb(13, 196, 241); */
   font-weight: bold;
 }
 
