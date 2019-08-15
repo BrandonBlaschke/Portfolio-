@@ -38,7 +38,7 @@ img#my_picture {
 
 p {
   font-family: "Montserrat", "Courier New", "Verdana", "Geneva";
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: white;
 }
 
@@ -49,13 +49,13 @@ hr {
 h1 {
   font-family: "Montserrat", "Courier New", "Verdana", "Geneva";
   color: white;
+  font-weight: bold;
 }
 
 h2 {
   font-family: "Montserrat", "Courier New", "Verdana", "Geneva";
   color: white;
   font-weight: bold;
-  margin-top: 1em;
 }
 
 ul {
@@ -83,10 +83,16 @@ a:hover {
 .bottom_line {
   border-bottom: 3px solid white;
   width: fit-content;
+  border-radius: 2px;
 }
 
 .indent {
   margin-left: 1em;
+}
+
+ul {
+  color: white;
+  font-size: 1.2em;
 }
 
 .small {
@@ -95,4 +101,19 @@ a:hover {
   margin-left: 3em;
   font-style: italic;
   margin-top: -1em;
+}
+
+.color1 {
+  background-color: #1a1a1a;
+  padding: 5em;
+}
+
+.color2 {
+  background-color: #262626;
+  padding: 5em;
+}
+
+.color3 {
+  background-color: #333333;
+  padding: 5em;
 }
