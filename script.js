@@ -3,6 +3,7 @@ $(function () {
     $("#content2").hide();
     $("#content3").hide();
     $("#content4").hide();
+    $("#content5").hide();
 
     setTimeout(() => {
         $("#content1").hide().fadeIn(2000);
@@ -15,5 +16,8 @@ $(function () {
         setTimeout(function () {
             $("#content4").fadeIn(2000);
         }, 3000);
+        setTimeout(function () {
+            $("#content5").fadeIn(2000);
+        }, 4000);
     }, 1000);
 });

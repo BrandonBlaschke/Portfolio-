@@ -55,6 +55,7 @@ h1 {
 h2 {
   font-family: "Montserrat", "Courier New", "Verdana", "Geneva";
   color: white;
+  margin-bottom: 1em;
   font-weight: bold;
 }
 
@@ -67,17 +68,20 @@ a {
   background-color: transparent;
   text-decoration: none;
   color: white;
+  font-size: 1.2em;
   font-family: "Montserrat", "Consolas", "Verdana", "Geneva";
 }
 
 a:visited {
   color: white;
+  font-size: 1.2em;
   text-decoration: none;
   font-family: "Montserrat", "Consolas", "Verdana", "Geneva";
 }
 
 a:hover {
-  color: #7c7979;
+  color: #c4c4c4;
+  font-size: 1.2em;
 }
 
 .bottom_line {
@@ -115,5 +119,19 @@ ul {
 
 .color3 {
   background-color: #333333;
+  padding: 5em;
+}
+
+.color4 {
+  background-color: #404040;
+  padding: 5em;
+}
+
+.color5 {
+  background-color: #4d4d4d;
+  padding: 5em;
+}
+
+#content1 {
   padding: 5em;
 }
