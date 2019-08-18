@@ -42,6 +42,13 @@ p {
   color: white;
 }
 
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1000px) {
+  p {
+    font-size: 1.8em;
+  }
+}
+
 hr {
   border-color: white;
 }
@@ -57,6 +64,20 @@ h2 {
   color: white;
   margin-bottom: 1em;
   font-weight: bold;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: 3em;
+  }
+}
+
+h3 {
+  font-family: "Montserrat", "Courier New", "Verdana", "Geneva";
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1em;
 }
 
 ul {
@@ -97,6 +118,14 @@ a:hover {
 ul {
   color: white;
   font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1000px) {
+  ul {
+    font-size: 1.6em;
+  }
 }
 
 .small {
@@ -105,6 +134,13 @@ ul {
   margin-left: 3em;
   font-style: italic;
   margin-top: -1em;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1000px) {
+  .small {
+    font-size: 1.5em;
+  }
 }
 
 .color1 {
@@ -133,5 +169,5 @@ ul {
 }
 
 #content1 {
-  padding: 5em;
+  padding: 3em;
 }
